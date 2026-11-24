@@ -107,7 +107,7 @@ LEADS = [
     dict(n=1, pic="merkury", region="EUROPE", topic="Conflict",
          field="UKRAINE WAR", follow=True, place="KYIV \u2192 BENGHAZI",
          label="7 SEA DRONES", cert="CONFIRMED",
-         headline="Kyiv says its sea drones sank a Russian warship",
+         headline="Ukraine confirms its drones sank a Russian warship",
          body="Zelensky: seven Ukrainian drones hit the corvette Merkury.",
          why="Far from home; Moscow warns of \u201cpainful consequences\u201d.",
          sources="Zelensky, Kyiv Independent, AJ", pin=(30.52, 50.45)),
@@ -155,7 +155,7 @@ CARDS = [
          pin=(4.5, 10.0)),
     dict(n=9, pic="health", region="AFRICA", topic="Health",
          field="POLICY", follow=False, place="ADDIS ABABA",
-         label="HEALTH SUMMIT", cert="CONFIRMED", sources="AU, Africa CDC",
+         label="SUMMIT", cert="CONFIRMED", sources="AU, Africa CDC",
          headline="African leaders open Addis health summit, seek less reliance on aid",
          pin=(38.75, 9.0)),
     dict(n=10, pic="ai", region="WORLD", topic="Tech & AI",
@@ -174,7 +174,7 @@ CARDS = [
          headline="Australian TV music legend Molly Meldrum, who boosted AC/DC, dies",
          pin=(144.96, -37.81)),
     dict(n=13, pic="oil", region="WORLD", topic="Economy",
-         field="OIL", follow=False, place="MARKETS", label="3-MONTH LOW",
+         field="OIL", follow=False, place="MARKETS", label="OIL −3%",
          cert="CONFIRMED", sources="Reuters, Investing",
          headline="Oil drops over 3% to a three-month low as Mideast supply rises",
          pin=None),
@@ -265,7 +265,7 @@ UNKNOWNS = [
 ]
 
 FOLLOWUPS = [
-    ("Merkury", "hit 22" + NBSP + "Nov"),
+    ("Merkury", "struck 22" + NBSP + "Nov, confirmed 23" + NBSP + "Nov"),
     ("Nvidia", "Huang quit 11 days earlier"),
     ("\u2018El Chapo" + NBSP + "Isidro\u2019", "caught 20" + NBSP + "Nov"),
     ("COP31", "ended 22" + NBSP + "Nov"),
@@ -837,7 +837,7 @@ def draw_masthead(c):
     c.line([(12, ry + 3), (1012, ry + 3)], INK, 0.7)
     # Deck.
     c.text(512, ry + 6,
-           "Kyiv says its drones sank a Russian warship  \u00b7  "
+           "Ukraine confirms its drones sank a Russian warship  \u00b7  "
            "Iran vows to fight US blockade  \u00b7  "
            "Nvidia brings back Huang, shares +31.5%",
            "serif_i", 16, RED, anchor="ma", element="deck")
